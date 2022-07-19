@@ -40,7 +40,7 @@ headers.append('Access-Control-Allow-Credentials', 'true');
 let url = _('input').value;
 if (url) {
 fetch(url,{
-      //mode: 'no-cors',
+      mode: 'no-cors',
       credentials: 'include',
       method: 'POST',
       headers: headers
